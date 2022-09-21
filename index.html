@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body style="background-color:rgb(39, 11, 58);">
+    <img id ="laranja"src="./img/rectangle.png" alt="">
+        <section>
+                <h1 class=" mx-2 mt-5">Entre</h1>
+                <hr class="linha mt-1">
+                <form id="entrada_dados" class="container">
+                    <div class="mb-3 mt-4 w-75 mx-auto">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <label for="email" class="floatingInput">Email</label>
+                            <img class="icon" src="./img/icon _user_.png" alt="">
+                            <p>Digite seu email</p>
+
+                        </div>
+                        <div class="form-floating" id="senha">
+                            <input type="password" class="form-control">
+                            <label for="senha" class="floatingInput">Senha</label>
+                            <img class="icon" id="aberto" src="./img/icon _eye_.png">
+                            <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+                            <p>Ainda não tem conta? <a href="cadastro.html">Cadastre-se!</a></p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center w-100 mb-2">
+                        <button type="button" class="btn btn-dark mb-2 p-2 w-25" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrar</button>
+                    </div>
+                </form>
+        </section>
+    <script src="entrada.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
