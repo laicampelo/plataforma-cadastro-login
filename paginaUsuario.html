@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/paginaUsuario.css">
+    <title>Home</title>
+</head>
+<body onload="dadosUsuario()"style="background-color:rgb(39, 11, 58);">
+        <img id="laranja"src="./img/Rectangle.png" alt="">
+        <section class="container">
+                <h1 class=" mx-2 mt-5">Olá, <strong id="nomeInicial"></strong>!</h1>
+                <hr>
+            </div>
+            <div id="dados">
+                <hr>
+                <label for="nUsuario">Nome</label>
+                <p id="nUsuario"></p>
+                <label for="dUsuario">Idade</label>
+                <p id="dUsuario"></p>
+                <label for="cUsuario">Celular</label>
+                <p id="cUsuario"></p>
+                <label for="eUsuario">Usuário</label>
+                <p id="eUsuario"></p>
+            </div>
+            <div class="botao">
+                <button type="button" class="bt"><a href="./index.html">Sair</a></button>
+            </div>
+        </section>   
+        <script src="entrada.js"></script>  
+</body>
+</html>

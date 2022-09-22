@@ -16,7 +16,7 @@
 }
 
 h1 {
-    color: #bcb9bf;
+    color: #37ceeb;
 }
 
 input {
@@ -35,15 +35,15 @@ form p {
     font-size: 12px;
 }
 
-form p a {
+form p a, button {
     text-decoration: none;
     color: rgb(201, 184, 32);
 }
 
-p a:hover{
+p a:hover, button:hover, .bt-voltar a:hover{
     color: rgb(221, 168, 23);
-    transition: 0.5s;
-    font-weight: 600;
+    transition: 0.2s;
+    font-weight: 700;
 }
 
 section {
@@ -57,12 +57,25 @@ section {
     margin: 80px auto;
 }
 
+button {
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 .linha {
      border-top: 4px solid rgb(255, 255, 255);
      width: 50px;
      margin-left: 6px;
  
+}
+
+#exampleModal {
+    transition: 0.3s;
+    width: 100%!important;
+    height: 700px;
+    margin: 0;
 }
 
 @keyframes go-back {
@@ -87,4 +100,28 @@ section {
         left: 10px;
         top: -100px;
     }
+}
+
+.bt {
+    color:#7700f0;
+    font-weight: 600;
+    width: 100px;
+    padding: 5px;
+    background-color: rgba(51, 255, 0, 0.747);
+    border-radius: 6px;
+    border:none;
+}
+
+.bt:hover {
+    color: #FFF;
+}
+
+.bt-voltar {
+    background-color: transparent;
+
+}
+
+.bt-voltar a {
+    text-decoration: none;
+    color: #FFF;
 }
