@@ -1,5 +1,4 @@
 # Plataforma de Login e Cadastro
-
 <p align="center">Plataforma de cadastro e login para estudo de uso de api e banco de dados.</p>
 <h4 align="center"> Status do projeto: concluído.</h4>
 
