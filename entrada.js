@@ -2,6 +2,7 @@ import {key} from './key.js';
 
 let list=[];
 let n="";
+let d="";
 let s="";
 let t="";
 let e="";
