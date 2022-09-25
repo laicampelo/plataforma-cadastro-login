@@ -95,8 +95,19 @@ function aoIniciar(){
         let btn = document.querySelector('#enter');
       
       btn.click();
+      login()
     
     }
+  });
+
+  let btn2=document.querySelector('#btn2')
+  btn2.addEventListener('click', function (){
+    entrada()
+  });
+
+  let btlogin=document.querySelector('#enter')
+  btlogin.addEventListener('click', function (){
+    login()
   });
 
 }
