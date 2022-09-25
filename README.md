@@ -29,7 +29,7 @@
 * Visualizar a página com os dados inseridos no cadastro;
 * Sair da página;
 * Deletar conta;
-<a href="guileless-cocada-18784b.netlify.app">Teste o projeto</a>
+<a href="https://guileless-cocada-18784b.netlify.app">Teste o projeto</a>
 <img src="./img/weblogin.png">
 <img src="./img/webcadastro.png">
 <img src="./img/webusuario.png">
