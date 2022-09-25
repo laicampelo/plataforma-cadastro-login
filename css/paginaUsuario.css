@@ -62,7 +62,7 @@ section {
     }
 }
 
-a {
+#sair {
     color:#7700f0;
     text-decoration: none;
 }
@@ -79,15 +79,18 @@ p {
 }
 .botao {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
     margin: 10px auto;
 
 }
 
+.btn {
+    font-weight: 600;
+}
+
 .bt {
     font-weight: 600;
-    width: 50px;
-    padding: 5px;
+    padding: 0 2rem;
     background-color: rgba(51, 255, 0, 0.747);
     border-radius: 6px;
     border:none;

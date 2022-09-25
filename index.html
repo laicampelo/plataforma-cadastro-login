@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body onload="aoIniciar()" style="background-color:rgb(39, 11, 58);">
+<body id="index" style="background-color:rgb(39, 11, 58);">
     <img id ="laranja"src="./img/rectangle.png" alt="">
         <section>
                 <h1 class=" mx-2 mt-5">Entre</h1>
@@ -16,63 +16,65 @@
                 <form class="container">
                     <div class="mb-3 mt-4 w-75 mx-auto">
                         <div class="form-floating">
-                            <input type="email" id="emailImput" class="form-control" aria-describedby="emailHelp" required>
-                            <label for="email" class="floatingInput">Usuário</label>
+                            <input type="email" id="emailInput" class="form-control" aria-describedby="emailHelp" required>
+                            <label for="email" class="floatingInput">Email</label>
                             <img class="icon" src="./img/icon _user_.png" alt="">
                             <p>Digite seu usuário</p>
 
                         </div>
                         <div class="form-floating senha">
-                            <input type="password" id="senhaImput" class="form-control" required>
+                            <input type="password" id="senhaInput" class="form-control" required>
                             <label for="senha" class="floatingInput senha">Senha</label>
                             <img class="icon senha" src="./img/icon _eye_.png">
                             <p>Esqueceu sua senha? <a href="#" class="descobrir">Clique aqui</a></p>
-                            <p>Ainda não tem conta? <button data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se!</a></button>
+                            <p>Ainda não tem conta? <span data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se!</a></span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center w-100 mb-2">
-                        <button type="button" class="bt"  onclick="login()">Entrar</button>
+                        <button type="button" id="enter" class="bt" onclick="login()">Entrar</button>
                     </div>
                 </form>
         </section>
 
         <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" style="pointer-events: visible;">
-                <h1 class=" modal-header">Cadastre-se</h1>
+                <h1 class=" modal-header mb-3">Cadastre-se</h1>
                 <form id="entrada_dados" class="container">
-                    <div class="mb-3 mt-4 w-75 mx-auto form-floating">
+                    <div class="mb-2 mt-2 w-75 mx-auto form-floating">
                         <div class="form-floating mb-3">
                             <input id="nome" class="form-control" required>
                             <label for="nome" type="text" class="floatingInput">Nome</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" id="data" class="form-control" required>
-                            <label for="data" class="floatingInput">Idade</label>
+                            <input id="sobrenome" class="form-control" required>
+                            <label for="sobrenome" type="text" class="floatingInput">Sobrenome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="date" id="data" class="form-control" required>
+                            <label for="data" class="floatingInput">Data de nascimento</label>
                         </div>
                         <div class="form-floating mb-3 d-flex">
                             <input type="tel" id="telefone" class="form-control" required>
                             <label for="telefone" class="floatingInput">Celular</label>
                         </div>
-                        <div class="form-floating">
+                        <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="email" aria-describedby="emailHelp" required>
-                            <p id="emailHelp" class="form-text">Escolha um usuário ou seu melhor email</p>
-                            <label for="email" class="floatingInput">Usuário</label>
+                            <label for="email" class="floatingInput">Email</label>
                         </div>
-                        <div class="form-floating senhaCad">
+                        <div class="form-floating senhaCad mb-3">
                             <input type="password" class="form-control" id="senhaCadastro" required>
                             <label for="senha" class="floatingInput">Senha</label>
                             <img class="icon" src="./img/icon _eye_.png">
-                            <p id="passwordHelp" class="form-text">Mínimo 8 dígitos</p>
                         </div>
                     </div>
                     <div class="d-flex justify-content-around w-100 mb-2">
                             <button type="button"  class="bt-voltar"><a href="./index.html">voltar</a></button>
-                        <button type="submit" class="bt" onclick="entrada()">Enviar</button>
+                        <button type="button" class="bt" id="btn2" onclick="entrada()">Enviar</button>
                     </div>
                 </form>
             </div>
     </section>
-    <script src="entrada.js"></script>
+    <script src="entrada.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

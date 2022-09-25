@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/paginaUsuario.css">
     <title>Home</title>
 </head>
-<body onload="dadosUsuario()"style="background-color:rgb(39, 11, 58);">
+<body style="background-color:rgb(39, 11, 58);">
         <img id="laranja"src="./img/Rectangle.png" alt="">
         <section class="container">
                 <h1 class=" mx-2 mt-5">Olá, <strong id="nomeInicial"></strong>!</h1>
@@ -18,17 +18,18 @@
                 <hr>
                 <label for="nUsuario">Nome</label>
                 <p id="nUsuario"></p>
-                <label for="dUsuario">Idade</label>
+                <label for="dUsuario">Data de nascimento</label>
                 <p id="dUsuario"></p>
                 <label for="cUsuario">Celular</label>
                 <p id="cUsuario"></p>
-                <label for="eUsuario">Usuário</label>
+                <label for="eUsuario">Email</label>
                 <p id="eUsuario"></p>
             </div>
-            <div class="botao">
-                <button type="button" class="bt"><a href="./index.html">Sair</a></button>
+            <div class="botao w-100">
+                <button type="button" id="sair" class="bt">Sair</a></button>
+                <button type="button" id="deletar" class="btn btn-danger">Deletar Conta</a></button>
             </div>
         </section>   
-        <script src="entrada.js"></script>  
+        <script type="module" src="entrada.js"></script>  
 </body>
 </html>
